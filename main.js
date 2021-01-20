@@ -27,27 +27,30 @@ const proyectos = [
     titulo: "Calculadora",
     github: "https://github.com/GrandThed/javascript-calculator",
     url: "https://grandthed.github.io/javascript-calculator",
-    descripcion: "Una simple calculadora hecha con ReactJS. No fue usada ninguna libreria y para evaluar la exprecion se uso eval()."
+    descripcion:
+      "Una simple calculadora hecha con ReactJS. No fue usada ninguna libreria y para evaluar la exprecion se uso eval().",
   },
   {
     titulo: "Reloj Pomodoro",
     github: "https://github.com/GrandThed/Pomodoro-Clock",
     url: "https://grandthed.github.io/Pomodoro-Clock",
-    descripcion: "Un reloj pomodoro, hecho con ReactJS con la ayuda de una libreria de sonido (react-sound) y algunos trucos de css."
+    descripcion:
+      "Un reloj pomodoro, hecho con ReactJS con la ayuda de una libreria de sonido (react-sound) y algunos trucos de css.",
   },
   {
     titulo: "Quote Machine",
     github: "https://github.com/GrandThed/quote-machine",
     url: "https://grandthed.github.io/quote-machine",
-    descripcion: "La primera aplicacion que he hize con ReactJS"
+    descripcion: "La primera aplicacion que he hize con ReactJS",
   },
   {
     titulo: "Drum Machine",
     github: "https://github.com/GrandThed/drum-machine",
     url: "https://grandthed.github.io/drum-machine",
-    descripcion: "Una pequeña consola de sonido, con 2 sets. Hecha con ReactJS y Howler para manejar el sonido y los cambios a este. Tambien se uso react-draggable para hacer una escala de sonido mas llevadera"
-  }
-]
+    descripcion:
+      "Una pequeña consola de sonido, con 2 sets. Hecha con ReactJS y Howler para manejar el sonido y los cambios a este. Tambien se uso react-draggable para hacer una escala de sonido mas llevadera",
+  },
+];
 
 const lenguajesActuales = [
   `<i class="devicon-style devicon-react-original colored"></i>`,
@@ -60,6 +63,7 @@ const lenguajesActuales = [
   `<i class="devicon-style devicon-html5-plain colored"></i>`,
   `<i class="devicon-style devicon-visualstudio-plain colored"></i>`,
   `<i class="devicon-style devicon-git-plain colored"></i>`,
+  // `<img src="${firebase}"></img>`
 ];
 
 const lenguajesAprendiendo = [
@@ -87,11 +91,14 @@ for (i = 0; i < experiencia.length; i++) {
 
 for (i = 0; i < proyectos.length; i++) {
   var item = document.createElement("div");
-  item.innerHTML = `<div class="mt-3">
+  item.innerHTML = `<div class="mt-3 d-flex justify-content-between">
     <span class="card-title h6 exp-title">${proyectos[i].titulo}</span>
+    <span class="card-title h6 exp-title">
+    <a target="_blank" href="${proyectos[i].github}" ><button class="proyectos-button">repositorio</button></a>
+    <a target="_blank" href="${proyectos[i].url}" ><button class="proyectos-button">live demo</button></a>
+    </span>
     </div>
-    <p><i class="github-icon-proyect devicon-github-original"></i> <a href="${proyectos[i].github}">${proyectos[i].github.replace("https://", "")}</p>
-    <p>Url: <a href="${proyectos[i].url}">${proyectos[i].url.replace("https://", "")}</a></p>
+    
     <p>${proyectos[i].descripcion}</p>`;
   document.getElementById("proyectos").appendChild(item);
 }

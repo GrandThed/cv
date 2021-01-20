@@ -56,3 +56,17 @@ a:hover {
     vertical-align: -3px;
     font-size: 1.2em;
 }
+
+.proyectos-button{
+    border: 1px solid #555;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 5px 5px 7px;
+    margin: 0 3px;
+    border-radius: 3px;
+}
+
+.proyectos-button:hover{
+    border: 1px solid #555;
+    background-color: #555;
+    color: white;
+}
