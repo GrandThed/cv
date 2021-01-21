@@ -94,8 +94,8 @@ for (i = 0; i < proyectos.length; i++) {
   item.innerHTML = `<div class="mt-3 d-flex justify-content-between">
     <span class="card-title h6 exp-title">${proyectos[i].titulo}</span>
     <span class="card-title h6 exp-title">
-    <a target="_blank" href="${proyectos[i].github}" ><button class="proyectos-button">repositorio</button></a>
-    <a target="_blank" href="${proyectos[i].url}" ><button class="proyectos-button">live demo</button></a>
+    <a target="_blank" href="${proyectos[i].github}" ><button class="btn btn-primary">repositorio</button></a>
+    <a target="_blank" href="${proyectos[i].url}" ><button class="btn btn-primary">live demo</button></a>
     </span>
     </div>
     
