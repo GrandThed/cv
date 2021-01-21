@@ -41,7 +41,7 @@ const proyectos = [
     titulo: "Quote Machine",
     github: "https://github.com/GrandThed/quote-machine",
     url: "https://grandthed.github.io/quote-machine",
-    descripcion: "La primera aplicacion que he hize con ReactJS",
+    descripcion: "La primera aplicacion con ReactJS. Extrae una frase celebre de la pequeña base de datos de forma aleatoria y la muestra en pantalla.",
   },
   {
     titulo: "Drum Machine",
@@ -91,11 +91,11 @@ for (i = 0; i < experiencia.length; i++) {
 
 for (i = 0; i < proyectos.length; i++) {
   var item = document.createElement("div");
-  item.innerHTML = `<div class="mt-3 d-flex justify-content-between">
+  item.innerHTML = `<div class="mt-3 d-flex justify-content-between align-items-center">
     <span class="card-title h6 exp-title">${proyectos[i].titulo}</span>
     <span class="card-title h6 exp-title">
-    <a target="_blank" href="${proyectos[i].github}" ><button class="btn btn-primary">repositorio</button></a>
-    <a target="_blank" href="${proyectos[i].url}" ><button class="btn btn-primary">live demo</button></a>
+    <a target="_blank" href="${proyectos[i].github}" ><button class="btn btn-dark">repositorio</button></a>
+    <a target="_blank" href="${proyectos[i].url}" ><button class="btn btn-dark">live demo</button></a>
     </span>
     </div>
     
