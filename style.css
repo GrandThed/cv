@@ -52,6 +52,10 @@ a:hover {
     margin-left:-5px ;
 }
 
+.fcc-logo{
+    vertical-align: -4px;
+}
+
 .github-icon-proyect{
     vertical-align: -3px;
     font-size: 1.2em;
@@ -63,6 +67,7 @@ a:hover {
     padding: 5px 5px 7px;
     margin: 0 3px;
     border-radius: 3px;
+    transition: all ease 200ms;
 }
 
 .proyectos-button:hover{
