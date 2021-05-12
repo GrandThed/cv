@@ -24,6 +24,13 @@ const estudios = [
 
 const proyectos = [
   {
+    titulo: "AguaZarca Inmobiliaria",
+    github: "https://github.com/GrandThed/AguaZarca",
+    url: "aguazarca.com.ar/",
+    descripcion:
+      "El proyecto mas grande que he hecho hasta la fecha, una pagina de asuntos inmobiliarios con React y Firebase",
+  },
+  {
     titulo: "Calculadora",
     github: "https://github.com/GrandThed/javascript-calculator",
     url: "https://grandthed.github.io/javascript-calculator",
