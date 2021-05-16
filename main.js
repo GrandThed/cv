@@ -2,6 +2,11 @@ const nombre = "Benjamin Cañas";
 
 const experiencia = [
   {
+    lugar: "ROSS Outside the Box",
+    periodo: "2021-Actualidad",
+    descripción: "Desarrollador front-end React Jr. en ROSS Outside the Box",
+  },
+  {
     lugar: "Freelancer",
     periodo: "2019 - 2020",
     descripción:
@@ -28,7 +33,7 @@ const proyectos = [
     github: "https://github.com/GrandThed/AguaZarca",
     url: "aguazarca.com.ar/",
     descripcion:
-      "El proyecto mas grande que he hecho hasta la fecha, una pagina de asuntos inmobiliarios con React y Firebase",
+      "El proyecto mas grande que he hecho hasta la fecha, una pagina de asuntos inmobiliarios con React y Firebase (Actualmente migrandolo a Gatsby)",
   },
   {
     titulo: "Calculadora",
