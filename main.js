@@ -31,7 +31,7 @@ const proyectos = [
   {
     titulo: "AguaZarca Inmobiliaria",
     github: "https://github.com/GrandThed/AguaZarca",
-    url: "aguazarca.com.ar/",
+    url: "https://aguazarca.com.ar/",
     descripcion:
       "El proyecto mas grande que he hecho hasta la fecha, una pagina de asuntos inmobiliarios con React y Firebase (Actualmente migrandolo a Gatsby)",
   },
