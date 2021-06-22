@@ -3,19 +3,19 @@ const nombre = "Benjamin Cañas";
 const experiencia = [
   {
     lugar: "ROSS Outside the Box",
-    periodo: "2021-Actualidad",
-    descripción: "Desarrollador front-end React Jr. en ROSS Outside the Box",
+    periodo: "2021-present",
+    descripción: " front-end React Developer in ROSS Outside the Box",
   },
   {
     lugar: "Freelancer",
     periodo: "2019 - 2020",
     descripción:
-      "Montaje de sitios web para clientes de todo el mundo.<br> Trabajos realizados con WordPress y Woocommerce para tiendas online. Mas de 20 proyectos entregados en 23 paises. Se realizan las tareas de atención al cliente, desarrollo y capacitación en caso de ser necesario. Los proyectos necesitaron uso de CSS, HTML y JavaScript en menor medida.",
+      "Website development for clients from all over the world. <br> Work done with WordPress and Woocommerce for online stores. More than 20 projects delivered in 4 countries. Customer service, development and training tasks are carried out if necessary. The projects required the use of CSS, HTML and JavaScript to a lesser extent.",
   },
   {
     lugar: "Alto Brillo S.A.",
     periodo: "2017-2018",
-    descripción: "Asistente . Ayudando en el area tecnica de la empresa.",
+    descripción: "Assistant . Helping in the technical area of the company.",
   },
 ];
 
@@ -23,7 +23,7 @@ const estudios = [
   {
     lugar: "Escuela Nueva Juan Mantovani",
     periodo: "2012-2018",
-    descripción: "Especialidad en Ciencias Naturales y Matematica",
+    descripción: "Specialty in Natural Sciences and Mathematics",
   },
 ];
 
@@ -33,35 +33,35 @@ const proyectos = [
     github: "https://github.com/GrandThed/AguaZarca",
     url: "https://aguazarca.com.ar/",
     descripcion:
-      "El proyecto mas grande que he hecho hasta la fecha, una pagina de asuntos inmobiliarios con React y Firebase (Actualmente migrandolo a Gatsby)",
+      "The biggest project I have done to date, a real estate page with React and Firebase (Currently migrating to Gatsby)",
   },
   {
     titulo: "Calculadora",
     github: "https://github.com/GrandThed/javascript-calculator",
     url: "https://grandthed.github.io/javascript-calculator",
     descripcion:
-      "Una simple calculadora hecha con ReactJS. No fue usada ninguna libreria y para evaluar la exprecion se uso eval().",
+      "A simple calculator made with ReactJS. No library was used and eval () was used to evaluate the expression.",
   },
   {
     titulo: "Reloj Pomodoro",
     github: "https://github.com/GrandThed/Pomodoro-Clock",
     url: "https://grandthed.github.io/Pomodoro-Clock",
     descripcion:
-      "Un reloj pomodoro, hecho con ReactJS con la ayuda de una libreria de sonido (react-sound) y algunos trucos de css.",
+      "A pomodoro clock, made with ReactJS with the help of a sound library (react-sound) and some css tricks.",
   },
   {
     titulo: "Quote Machine",
     github: "https://github.com/GrandThed/quote-machine",
     url: "https://grandthed.github.io/quote-machine",
     descripcion:
-      "La primera aplicacion con ReactJS. Extrae una frase celebre de la pequeña base de datos de forma aleatoria y la muestra en pantalla.",
+      "My first application with ReactJS. It randomly extracts a famous phrase from the small database and displays it on the screen.",
   },
   {
     titulo: "Drum Machine",
     github: "https://github.com/GrandThed/drum-machine",
     url: "https://grandthed.github.io/drum-machine",
     descripcion:
-      "Una pequeña consola de sonido, con 2 sets. Hecha con ReactJS y Howler para manejar el sonido y los cambios a este. Tambien se uso react-draggable para hacer una escala de sonido mas llevadera",
+      "A small sound console, with 2 sets. Made with ReactJS and Howler to handle the sound and changes to it. React-draggable was also used to make a sound scale more bearable",
   },
 ];
 
