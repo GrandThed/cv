@@ -49,20 +49,6 @@ const proyectos = [
     descripcion:
       "A pomodoro clock, made with ReactJS with the help of a sound library (react-sound) and some css tricks.",
   },
-  {
-    titulo: "Quote Machine",
-    github: "https://github.com/GrandThed/quote-machine",
-    url: "https://grandthed.github.io/quote-machine",
-    descripcion:
-      "My first application with ReactJS. It randomly extracts a famous phrase from the small database and displays it on the screen.",
-  },
-  {
-    titulo: "Drum Machine",
-    github: "https://github.com/GrandThed/drum-machine",
-    url: "https://grandthed.github.io/drum-machine",
-    descripcion:
-      "A small sound console, with 2 sets. Made with ReactJS and Howler to handle the sound and changes to it. React-draggable was also used to make a sound scale more bearable",
-  },
 ];
 
 const lenguajesActuales = [
@@ -107,7 +93,7 @@ for (i = 0; i < proyectos.length; i++) {
   item.innerHTML = `<div class="mt-3 d-flex justify-content-between align-items-center">
     <span class="card-title h6 exp-title">${proyectos[i].titulo}</span>
     <span class="card-title h6 exp-title">
-    <a target="_blank" href="${proyectos[i].github}" ><button class="btn btn-primary btn-sm"><i class="devicon-github-original github-icon-proyect"></i> repositorio</button></a>
+    <a target="_blank" href="${proyectos[i].github}" ><button class="btn btn-primary btn-sm"><i class="devicon-github-original github-icon-proyect"></i> repository</button></a>
     <a target="_blank" href="${proyectos[i].url}" ><button class="btn btn-dark btn-sm"><i class="devicon-googlecloud-plain github-icon-proyect"></i> live demo</button></a>
     </span>
     </div>
