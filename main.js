@@ -49,20 +49,6 @@ const proyectos = [
     descripcion:
       "Un reloj pomodoro, hecho con ReactJS con la ayuda de una libreria de sonido (react-sound) y algunos trucos de css.",
   },
-  {
-    titulo: "Quote Machine",
-    github: "https://github.com/GrandThed/quote-machine",
-    url: "https://grandthed.github.io/quote-machine",
-    descripcion:
-      "La primera aplicacion con ReactJS. Extrae una frase celebre de la pequeña base de datos de forma aleatoria y la muestra en pantalla.",
-  },
-  {
-    titulo: "Drum Machine",
-    github: "https://github.com/GrandThed/drum-machine",
-    url: "https://grandthed.github.io/drum-machine",
-    descripcion:
-      "Una pequeña consola de sonido, con 2 sets. Hecha con ReactJS y Howler para manejar el sonido y los cambios a este. Tambien se uso react-draggable para hacer una escala de sonido mas llevadera",
-  },
 ];
 
 const lenguajesActuales = [
