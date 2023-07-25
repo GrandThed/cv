@@ -2,21 +2,21 @@ const nombre = "Benjamin Cañas";
 
 const experiencia = [
   {
-    lugar: "ROSS Outside the Box",
-    periodo: "2021-present",
-    descripción: " front-end React Developer in ROSS Outside the Box",
+    lugar: "Bitlogic (Flutter/React/Angular)",
+    periodo: "Aug. 2021-present",
+    descripción: "React, Angular, and Flutter developer at Bitlogic, I contributed to multiple projects as a versatile developer. Throughout my work, I had the opportunity to learn various technologies and collaborate with diverse teams.",
   },
   {
-    lugar: "Freelancer",
-    periodo: "2019 - 2020",
+    lugar: "ROSS Outside the Box (React)",
+    periodo: "Mar. 2021 - Aug. 2021",
+    descripción: "Front-End React Developer at ROSS Outside the Box, I specialized in developing software primarily catering to Human Resources needs.",
+  },
+  {
+    lugar: "Freelancer (WordPress)",
+    periodo: "Jul. 2020 - Mar. 2021",
     descripción:
-      "Website development for clients from all over the world. <br> Work done with WordPress and Woocommerce for online stores. More than 20 projects delivered in 4 countries. Customer service, development and training tasks are carried out if necessary. The projects required the use of CSS, HTML and JavaScript to a lesser extent.",
-  },
-  {
-    lugar: "Alto Brillo S.A.",
-    periodo: "2017-2018",
-    descripción: "Assistant . Helping in the technical area of the company.",
-  },
+      "Website development for clients from all over the world. <br> Work done with WordPress and Woocommerce for online stores. More than 20 projects delivered in 4 countries. Customer service, development and training tasks are carried out if necessary. The projects required the use of CSS, HTML and JavaScript.",
+  }
 ];
 
 const estudios = [
@@ -29,32 +29,32 @@ const estudios = [
 
 const proyectos = [
   {
+    titulo: "UCC - Flutter App",
+    url: "https://play.google.com/store/apps/details?id=com.uccor.app&hl=en_US",
+    descripcion:
+      "An app developed with Flutter, which consumes the UCC (Córdoba's Catholic University in Spanish) API through a BFF developed with Golang to serve the app. It offers students the possibility to access all the functionalities of the student portal on their phones.",
+  },
+  {
+    titulo: "UCC - React CMS",
+    url: "https://www.ucc.edu.ar/",
+    descripcion:
+      `A CMS developed with Gatsby and Strapi for the institutional use of UCC (Córdoba's Catholic University in Spanish). The development was centered on providing the UCC staff with the possibility to edit the website content.`,
+  },
+  {
     titulo: "AguaZarca Inmobiliaria",
     github: "https://github.com/GrandThed/AguaZarca",
     url: "https://aguazarca.com.ar/",
     descripcion:
-      "The biggest project I have done to date, a real estate page with React and Firebase (Currently migrating to Gatsby)",
-  },
-  {
-    titulo: "Calculadora",
-    github: "https://github.com/GrandThed/javascript-calculator",
-    url: "https://grandthed.github.io/javascript-calculator",
-    descripcion:
-      "A simple calculator made with ReactJS. No library was used and eval () was used to evaluate the expression.",
-  },
-  {
-    titulo: "Reloj Pomodoro",
-    github: "https://github.com/GrandThed/Pomodoro-Clock",
-    url: "https://grandthed.github.io/Pomodoro-Clock",
-    descripcion:
-      "A pomodoro clock, made with ReactJS with the help of a sound library (react-sound) and some css tricks.",
-  },
+      "A real estate page with React and Firebase",
+  }
 ];
 
 const lenguajesActuales = [
+  `<i class="devicon-style devicon-flutter-plain colored"></i>`,
   `<i class="devicon-style devicon-react-original colored"></i>`,
   `<i class="devicon-style devicon-redux-original colored"></i>`,
   `<i class="devicon-style devicon-nodejs-plain colored"></i>`,
+  `<i class="devicon-style devicon-typescript-plain colored"></i>`,
   `<i class="devicon-style devicon-npm-original-wordmark colored"></i>`,
   `<i class="devicon-style devicon-mongodb-plain colored"></i>`,
   `<i class="devicon-style devicon-javascript-plain colored"></i>`,
@@ -69,8 +69,9 @@ const lenguajesAprendiendo = [
   `<i class="devicon-style devicon-inkscape-plain colored"></i>`,
   `<i class="devicon-style devicon-python-plain colored"></i>`,
   `<i class="devicon-style devicon-sass-original colored"></i>`,
-  `<i class="devicon-style devicon-typescript-plain colored"></i>`,
   `<i class="devicon-style devicon-csharp-plain colored"></i>`,
+  `<i class="devicon-style devicon-amazonwebservices-original colored"></i>`,
+
 ];
 
 // Cambia el nombre del H1 que con tiene el nombre del usuario
@@ -90,17 +91,28 @@ for (i = 0; i < experiencia.length; i++) {
 
 for (i = 0; i < proyectos.length; i++) {
   var item = document.createElement("div");
-  item.innerHTML = `<div class="mt-3 d-flex justify-content-between align-items-center">
+  if (proyectos[i].github == null) {
+    item.innerHTML = `<div class="mt-3 d-flex justify-content-between align-items-center">
     <span class="card-title h6 exp-title">${proyectos[i].titulo}</span>
     <span class="card-title h6 exp-title">
-    <a target="_blank" href="${proyectos[i].github}" ><button class="btn btn-primary btn-sm"><i class="devicon-github-original github-icon-proyect"></i> repository</button></a>
     <a target="_blank" href="${proyectos[i].url}" ><button class="btn btn-dark btn-sm"><i class="devicon-googlecloud-plain github-icon-proyect"></i> live demo</button></a>
     </span>
     </div>
-    
     <p>${proyectos[i].descripcion}</p>`;
+  } else {
+    item.innerHTML = `<div class="mt-3 d-flex justify-content-between align-items-center">
+      <span class="card-title h6 exp-title">${proyectos[i].titulo}</span>
+      <span class="card-title h6 exp-title">
+      <a target="_blank" href="${proyectos[i].github}" ><button class="btn btn-primary btn-sm"><i class="devicon-github-original github-icon-proyect"></i> repository</button></a>
+      <a target="_blank" href="${proyectos[i].url}" ><button class="btn btn-dark btn-sm"><i class="devicon-googlecloud-plain github-icon-proyect"></i> live demo</button></a>
+      </span>
+      </div>
+      <p>${proyectos[i].descripcion}</p>`;
+  }
   document.getElementById("proyectos").appendChild(item);
 }
+
+
 
 // Itineración que crea los items en "Estudios"
 for (i = 0; i < estudios.length; i++) {
